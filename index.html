@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace Knowledge Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">MP Hub</div>
+            <ul>
+                <li><a href="#queries">Cursor Queries</a></li>
+                <li><a href="#learnings">Experiment Learnings</a></li>
+                <li><a href="#calendars">Launch Calendars</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <header>
+                <h1>Marketplace Team Portal</h1>
+                <p>Shared intelligence for better decision making.</p>
+            </header>
+
+            <section id="queries" class="section">
+                <h2>Shared Cursor Queries</h2>
+                <div class="query-card">
+                    <h3>Supply-Side Retention SQL</h3>
+                    <p>Use this to track churned sellers over a 30-day window.</p>
+                    <code>SELECT seller_id, churn_date FROM marketplace_v1 WHERE...</code>
+                    <button class="copy-btn">Copy Code</button>
+                </div>
+            </section>
+
+            <section id="learnings" class="section">
+                <h2>Experiment Learnings</h2>
+                <div class="grid">
+                    <div class="card learning">
+                        <span class="tag success">Success</span>
+                        <h3>Promo Code A/B Test</h3>
+                        <p><strong>Result:</strong> 15% lift in conversion. Users prefer fixed $ discounts over %.</p>
+                    </div>
+                    <div class="card learning">
+                        <span class="tag fail">Inconclusive</span>
+                        <h3>UI Redesign (Search Bar)</h3>
+                        <p><strong>Result:</strong> No significant change in CTR. High friction on mobile.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="calendars" class="section">
+                <h2>Links & Calendars</h2>
+                <div class="link-grid">
+                    <a href="#" class="link-card">Q1 Product Roadmap ↗</a>
+                    <a href="#" class="link-card">Marketing Launch Calendar ↗</a>
+                    <a href="#" class="link-card">Experiment Backlog (Jira) ↗</a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
