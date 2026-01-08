@@ -1,0 +1,142 @@
+:root {
+    --primary: #2563eb;
+    --bg-light: #f8fafc;
+    --sidebar-bg: #1e293b;
+    --text-main: #334155;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: var(--sidebar-bg);
+    color: white;
+    padding: 2rem;
+    position: fixed;
+}
+
+.sidebar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #60a5fa;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 1.5rem 0;
+}
+
+.sidebar ul li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: white;
+}
+
+/* Content Area */
+.content {
+    margin-left: 250px;
+    padding: 3rem;
+    width: 100%;
+}
+
+header {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+
+.section {
+    margin-bottom: 4rem;
+}
+
+/* Cards & Queries */
+.query-card {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+code {
+    display: block;
+    background: #0f172a;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.success { background: #dcfce7; color: #166534; }
+.fail { background: #fee2e2; color: #991b1b; }
+
+.link-grid {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.link-card {
+    background: var(--primary);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link-card:hover {
+    background: #1d4ed8;
+}
